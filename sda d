@@ -1,0 +1,15 @@
+if game.Players.LocalPlayer.UserId == 2343379587 or 1550291840 then
+print("Access Enabled")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/godlyjace/dkonly/main/bam%22"))(); 
+else
+    local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Whitelist";
+	Text = "You are not whitelisted.";
+	Duration = 3;
+})
+    wait(3)
+game.Players.LocalPlayer:Kick("aylin#8552 if this is incorrect.")
+print("Denied")
+end
